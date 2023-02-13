@@ -1,0 +1,15 @@
+<resources>
+
+    <string name="app_name">Rafaella Vendas</string>
+    <string name="Entrar">Entrar</string>
+    <string name="Sair">Sair</string>
+    <string name="Register_Text">Cadastrar Administrador</string>
+    <string name="Register_Text_screen">Administrador</string>
+    <string name="Cadastrar">Cadastrar</string>
+    <string name="Revendedora_id">Revendedora Rafaela Vieira</string>
+
+    <string name="openNavDrawer">Open</string>
+    <string name="closeNavDrawer">Close</string>
+    <string name="pedidos">Pedidos</string>
+
+</resources>

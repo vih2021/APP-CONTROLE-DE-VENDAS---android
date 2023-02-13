@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/Tela_Pedidos_Relative"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaPedidos"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/message_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text=""
+        android:gravity="center_vertical|center_horizontal">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/filter"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/toolbar"
+        android:layout_alignRight="@id/buscar"
+        android:layout_alignParentRight="true"
+
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/no_filter">
+
+    </ImageView>
+
+    <EditText
+        android:id="@+id/buscar"
+        style="@style/EditTextComponentBuscar"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginLeft="20dp"
+        android:drawableRight="@drawable/lupa"
+        android:hint="Buscar">
+    </EditText>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/red"
+        app:titleTextColor="@color/white">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/title_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignBaseline="@id/toolbar"
+        android:gravity="center"
+        android:text="10/03/2023"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/buscar">
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycle_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/pedido_item">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <View
+                android:layout_below="@id/recycle_view"
+                android:layout_width="match_parent"
+                android:layout_height="82dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/white">
+            </View>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_btn"
+        android:layout_width="120dp"
+        android:layout_height="151dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/add"
+        app:backgroundTint="#C8182E9A"
+        app:rippleColor="@color/white">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/finalizar"
+        android:layout_width="120dp"
+        android:layout_height="151dp"
+        android:layout_alignStart="@id/title_bar"
+        android:layout_alignTop="@id/excluir"
+        android:layout_alignEnd="@id/title_bar"
+        android:layout_alignBottom="@id/excluir"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="25dp"
+        android:src="@drawable/contabilizar_pedido"
+        android:tooltipText="@string/pedidos"
+        app:backgroundTint="@color/teal_700"
+        app:rippleColor="@color/white">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/excluir"
+        android:layout_width="120dp"
+        android:layout_height="151dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/delete"
+        app:backgroundTint="@color/red"
+        app:rippleColor="@color/white">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+</RelativeLayout>

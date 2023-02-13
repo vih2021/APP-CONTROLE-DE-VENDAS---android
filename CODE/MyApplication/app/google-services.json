@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1095438025024",
+    "project_id": "rafaela-dicorpo",
+    "storage_bucket": "rafaela-dicorpo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1095438025024:android:b3c3a2360977f910f37aa5",
+        "android_client_info": {
+          "package_name": "com.rafaelavieiravendas.RafaelaDicorpo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1095438025024-m7qlbpeuviblpbsuksra8d33f2rmeo0g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6FGAc59UoKdYoayTroilFp0kSIzwPOv4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1095438025024-m7qlbpeuviblpbsuksra8d33f2rmeo0g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

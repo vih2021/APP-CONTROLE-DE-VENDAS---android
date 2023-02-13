@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaCriarPedidoRevendedora">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/pedidos_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+        <Toolbar
+            android:id="@+id/pedido_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#850202"
+            android:textAlignment="center"
+            android:titleTextColor="@color/white">
+
+            <TextView
+                android:id="@+id/title_bar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Novo pedido"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textAlignment="center" />
+
+        </Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/container_Revendedora"
+        android:layout_gravity="center"
+        style="@style/ContainerComponents"
+        android:layout_width="wrap_content"
+        android:layout_height="600dp"
+        android:layout_below="@id/pedidos_bar">
+
+        <TextView
+            android:id="@+id/text_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="40dp"
+            android:text="Informe a data do pedido:"
+            android:textAlignment="center"
+            android:textSize="16dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/input_date"
+            style="@style/EditTextComponentList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_data"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="__/__/__"
+            android:inputType="date"
+            android:text=""
+            android:textAlignment="center"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/text_valor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/input_date"
+            android:layout_marginTop="20dp"
+            android:text="Informe o valor do pedido:"
+            android:textAlignment="center"
+            android:textSize="16dp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/input_valor"
+            style="@style/EditTextComponentList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_valor"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="R$ 0,00"
+            android:inputType="number"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/text_qntd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/input_valor"
+            android:layout_marginTop="20dp"
+            android:text="Quantidade de peças:"
+            android:textAlignment="center"
+            android:textSize="16dp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/input_qntd"
+            style="@style/EditTextComponentList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_qntd"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="0"
+            android:inputType="number"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/text_descricao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/input_qntd"
+            android:layout_marginTop="30dp"
+            android:text="Descrição do pedido: (Opcional)"
+            android:textAlignment="center"
+            android:textSize="16dp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/input_descricao"
+            style="@style/EditTextComponentList"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/text_descricao"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:gravity="top"
+            android:padding="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_descartar"
+            style="@style/ButtonRevendedoraPedido"
+            android:layout_marginRight="40dp"
+            android:layout_width="125dp"
+            android:layout_below="@id/input_descricao"
+            android:layout_alignStart="@id/input_descricao"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+            android:text="Descartar" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_registrar"
+            style="@style/ButtonRevendedoraPedido"
+            android:layout_width="140dp"
+            android:layout_below="@id/input_descricao"
+            android:layout_alignTop="@id/button_descartar"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:layout_alignEnd="@id/input_descricao"
+            android:layout_toEndOf="@id/button_descartar"
+            android:text="Regstrar" />
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_pendentes"
+        android:title="Pendentes"/>
+
+    <item
+        android:id="@+id/menu_pagos"
+        android:title="Pagos" />
+
+    <item
+        android:id="@+id/menu_nenhum"
+        android:title="Nenhum" />
+
+</menu>

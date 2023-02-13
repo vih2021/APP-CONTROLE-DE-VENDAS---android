@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+   <item android:title="Sistema">
+        <menu>
+
+            <item
+                android:id="@+id/menu_pedido"
+                android:title="Pedidos"/>
+
+            <item
+                android:id="@+id/menu_devolucao"
+                android:title="Devoluções" />
+
+            <item
+                android:id="@+id/menu_financeiro"
+                android:title="Financeiro" />
+
+            <item
+                android:id="@+id/menu_historico"
+                android:title="Histórico"/>
+
+            <item
+                android:id="@+id/menu_cliente"
+                android:title="Clientes"/>
+
+        </menu>
+   </item>
+
+    <item android:title="Configurações">
+        <menu>
+            <item
+                android:id="@+id/sair"
+                android:title="@string/Sair" />
+        </menu>
+    </item>
+</menu>

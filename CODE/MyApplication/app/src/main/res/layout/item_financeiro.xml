@@ -1,0 +1,79 @@
+<androidx.cardview.widget.CardView
+    android:id="@+id/fundo_card"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_tela_financeiro"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:background="#4CAF50"
+        android:id="@+id/container_pedidos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/text_inicio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inicio : "
+            android:textColor="@color/white">
+
+        </TextView>
+
+        <TextView
+            android:layout_below="@id/text_inicio"
+            android:layout_alignStart="@id/text_inicio"
+            android:id="@+id/text_encerrado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Encerrado :   "
+            android:textColor="@color/white">
+
+        </TextView>
+
+        <TextView
+            android:layout_toEndOf="@id/text_inicio"
+            android:id="@+id/dataInicio_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:layout_alignStart="@id/dataFim_view"
+            android:text="10/05/2022"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_toEndOf="@id/text_encerrado"
+            android:id="@+id/dataFim_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dataInicio_view"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/white"
+            android:text="10/05/2022" />
+
+        <TextView
+            android:id="@+id/preco"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@id/dataInicio_view"
+            android:text="R$ 10.255,00"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20dp">
+
+        </TextView>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

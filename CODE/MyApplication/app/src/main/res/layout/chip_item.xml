@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/container_pedidos"
+    android:padding="5dp"
+    android:textAlignment="center">
+
+    <TextView
+        android:id="@+id/tamanho"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:singleLine="true"
+        android:text="Tamanho: "
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#B7000000" />
+
+    <TextView
+        android:id="@+id/cor"
+        android:layout_below="@id/tamanho"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:singleLine="true"
+        android:text="Cor: "
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#B7000000" />
+
+    <TextView
+        android:id="@+id/preco"
+        android:layout_below="@id/cor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:singleLine="true"
+        android:text="Preço: "
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#B7000000" />
+
+    <TextView
+        android:id="@+id/quantidade"
+        android:layout_below="@id/preco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:singleLine="true"
+        android:text="Quantidade: "
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#B7000000" />
+
+    <TextView
+        android:id="@+id/produto"
+        android:layout_below="@id/quantidade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="Produto: "
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#B7000000" />
+
+</RelativeLayout>

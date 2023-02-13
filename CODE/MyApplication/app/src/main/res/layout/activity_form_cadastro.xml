@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_cadastro"
+        tools:context=".FormCadastro">
+
+        <ImageView
+            android:id="@+id/logo_id_cadastro"
+            android:layout_width="240dp"
+            android:layout_height="164dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/dicorpo_logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/cadastro_label_id"
+            android:layout_width="192dp"
+            android:layout_height="17dp"
+            android:fontFamily="sans-serif-thin"
+            android:text="@string/Register_Text"
+            android:textAlignment="center"
+            android:textColor="#1B1A1A"
+            android:textColorHighlight="#000000"
+            android:textSize="12sp"
+            android:textStyle="normal|bold|italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/logo_id_cadastro"
+            android:layout_marginTop="20dp"
+            app:layout_constraintVertical_bias="0.151" />
+
+        <View
+            android:id="@+id/container_Cadastro"
+            style="@style/ContainerComponentsCadastro"
+            android:layout_width="match_parent"
+            android:layout_height="465dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="96dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cadastro_label_id"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/editext_nome"
+            style="@style/EditTextComponent"
+            android:hint="Nome completo"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@id/container_Cadastro"
+            app:layout_constraintStart_toStartOf="@id/container_Cadastro"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toTopOf="@id/container_Cadastro" />
+
+        <EditText
+            android:id="@+id/editext_email"
+            style="@style/EditTextComponent"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="@id/container_Cadastro"
+            app:layout_constraintStart_toStartOf="@id/container_Cadastro"
+            app:layout_constraintTop_toBottomOf="@id/editext_nome"/>
+
+        <EditText
+            android:id="@+id/editext_telefone"
+            style="@style/EditTextComponent"
+            android:hint="Telefone"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@id/container_Cadastro"
+            app:layout_constraintStart_toStartOf="@id/container_Cadastro"
+            app:layout_constraintTop_toBottomOf="@id/editext_email"/>
+
+        <EditText
+            android:id="@+id/editext_senha"
+            style="@style/EditTextComponent"
+            android:ems="10"
+            android:enabled="true"
+            android:hint="Senha"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="@id/container_Cadastro"
+            app:layout_constraintStart_toStartOf="@id/container_Cadastro"
+            app:layout_constraintTop_toBottomOf="@id/editext_telefone" />
+
+        <EditText
+            android:id="@+id/editext_senha2"
+            style="@style/EditTextComponent"
+            android:ems="10"
+            android:enabled="true"
+            android:hint="Confirmar senha"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="@id/container_Cadastro"
+            app:layout_constraintStart_toStartOf="@id/container_Cadastro"
+            app:layout_constraintTop_toBottomOf="@id/editext_senha" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_Cadastro"
+            style="@style/Button"
+            android:layout_marginTop="15dp"
+            android:text="@string/Cadastrar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editext_senha2"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

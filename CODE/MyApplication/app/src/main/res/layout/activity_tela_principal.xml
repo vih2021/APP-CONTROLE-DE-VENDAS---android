@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaPrincipal"
+    android:id="@+id/DrawerLayout"
+    android:background="@color/red">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:theme="@style/TelaInicialTheme.TemaClaro">
+
+            <androidx.appcompat.widget.Toolbar
+
+                android:id="@+id/toolBar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/red"
+                app:title="" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom">
+
+                <TextView
+                    android:layout_marginTop="50dp"
+                    android:id="@+id/texto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="120dp"
+                    android:padding="10dp"
+                    android:text="Estamos construindo este layout ..."
+                    android:textAlignment="center"
+                    android:textColor="@color/green"
+                    android:textSize="20dp"></TextView>
+
+                <ImageView
+                    android:layout_width="400dp"
+                    android:layout_height="300dp"
+                    android:layout_below="@id/texto"
+                    android:layout_gravity="bottom">
+
+                </ImageView>
+
+            </RelativeLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:menu="@menu/menu"
+        android:id="@+id/nav_view"
+        android:layout_gravity="start"
+        app:itemTextColor="@color/white"
+        app:itemShapeFillColor="@color/red"
+        app:itemRippleColor="@color/light_red" />
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

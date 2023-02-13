@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaFinanceiro">
+
+    <TextView
+        android:id="@+id/message_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="">
+
+    </TextView>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_alignTop="@id/titulo"
+        android:layout_height="40dp"
+        android:src="@drawable/done_icon"
+        android:layout_toStartOf="@id/titulo">
+
+    </ImageView>
+
+    <TextView
+
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Faturados"
+        android:textAlignment="center"
+        android:textSize="25dp">
+
+    </TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titulo"
+        android:layout_marginBottom="45dp"
+        android:padding="20dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:layout_editor_absoluteX="30dp"
+        tools:listitem="@layout/item_financeiro"></androidx.recyclerview.widget.RecyclerView>
+
+
+    <Button
+        android:id="@+id/apagar"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="65dp"
+        android:text="Selecionar Itens">
+    </Button>
+
+    <ImageView
+        android:id="@+id/s"
+        android:visibility="invisible"
+        android:src="@drawable/close_icon"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/titulo"
+        android:layout_alignBottom="@id/titulo"
+        android:layout_marginEnd="50dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp">
+    </ImageView>
+
+
+</RelativeLayout>
