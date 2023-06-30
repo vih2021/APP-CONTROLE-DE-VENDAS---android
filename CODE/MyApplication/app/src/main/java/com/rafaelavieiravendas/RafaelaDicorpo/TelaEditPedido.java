@@ -225,7 +225,6 @@ public class TelaEditPedido extends AppCompatActivity {
         for(int i = 0; i < ListaDeItens.size() ; i++){
             InformationItem item = ListaDeItens.get(i);
             addItem(item.getId(), item.getIndex());
-            Log.d("DDDDDDDDDDDDDDDDD", "a" + item);
         }
 
         somarTodosItens();
@@ -569,11 +568,8 @@ public class TelaEditPedido extends AppCompatActivity {
         for(int i = 0; i < ListaDeItens.size(); i++){
             if(ListaDeItens.get(i).getIndex() == position){ //////CUEIO
                 item = ListaDeItens.get(i);
-                Log.d("CUUUUUUUUU", ""+item.getTamaho());
             }
         }
-
-        Log.d("CUUUUUUUUU2222", ""+ListaDeItens.size());
 
         item_tamanho.setText("Tamanho : " + item.getTamaho() );
         item_cor.setText("Cor : " + item.getCor());
@@ -581,7 +577,6 @@ public class TelaEditPedido extends AppCompatActivity {
         item_quantidade.setText("Quantidade : " + item.getQuantidade());
         item_produto.setText("Produto : " + item.getProduto());
 
-        Log.d("CUUUUUUUUU", "CABOOOOOOOOOOOOOOOO");
 
         builder.setView(view);
         alerta = builder.create();
